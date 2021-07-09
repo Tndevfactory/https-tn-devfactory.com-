@@ -1,0 +1,78 @@
+%lang_switcher {
+    z-index: 9999;
+    position: relative;
+
+    @media (max-width: 600px) {
+        left: -19px;
+        top: 2px;
+    }
+}
+.lang_switcher_ar {
+    @extend %lang_switcher;
+    left: 13px;
+    @media (max-width: 600px) {
+        left: -1px;
+        top: 2px;
+    }
+}
+.lang_switcher_fr {
+    @extend %lang_switcher;
+}
+
+#lang-switcher {
+    .affiche_lang {
+        // border: blueviolet 3px solid;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        box-shadow: none;
+        &:hover {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    .lang_box {
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        background-size: 30px 30px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .lang_box_fr {
+        background-image: url("/../img/flag/fr.png");
+    }
+    .lang_box_ar {
+        background-image: url("/../img/flag/ar.png");
+    }
+    .lang_box_uk {
+        background-image: url("/../img/flag/uk.png");
+    }
+
+    ul {
+        min-width: 9rem !important;
+        @media (max-width: 600px) {
+            min-width: 3rem !important;
+        }
+        li {
+            a {
+                color: rgb(39, 43, 43);
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                    margin-left: 1rem;
+                    font-size: 0.9rem;
+                }
+                .arabic_ar {
+                    font-size: 1rem;
+                }
+                .arabic_fr {
+                    font-size: 1.15rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

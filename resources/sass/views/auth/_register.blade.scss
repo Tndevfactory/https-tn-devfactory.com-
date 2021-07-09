@@ -1,0 +1,26 @@
+.register_show_hide_password {
+    top: 7px;
+    right: 20px;
+
+    .register_show_password {
+        // color: rgb(50, 205, 50);
+        cursor: pointer;
+    }
+    .register_hide_password {
+        // color: rgb(230, 36, 22);
+        cursor: pointer;
+    }
+}
+.register_confirm_show_hide_password {
+    top: 7px;
+    right: 20px;
+
+    .register_confirm_show_password {
+        // color: rgb(50, 205, 50);
+        cursor: pointer;
+    }
+    .register_confirm_hide_password {
+        // color: rgb(230, 36, 22);
+        cursor: pointer;
+    }
+}

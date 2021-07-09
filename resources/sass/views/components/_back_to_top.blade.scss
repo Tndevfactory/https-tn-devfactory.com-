@@ -1,0 +1,23 @@
+.back_to_top {
+    background-color: transparent;
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+    z-index: 999;
+    display: none;
+    .back_to_top_btn {
+        background-color: rgb(36, 39, 51);
+        display: inline-block;
+        padding: 0.5rem 0.9rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.4s;
+        &:hover {
+            background-color: #e6a01e;
+        }
+    }
+    .back_to_top_icon {
+        color: #fff;
+        font-size: 1.1rem;
+    }
+}

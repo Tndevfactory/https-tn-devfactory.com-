@@ -1,0 +1,15 @@
+.process {
+    background-color: rgb(237, 240, 241);
+    .fas {
+        color: #df8a1c;
+        font-size: 3rem;
+    }
+    .text_process {
+        font-family: "Oswald", "Tajawal", sans-serif;
+        // color: #e62b60;
+        color: #110229;
+        @media (max-width: 600px) {
+            font-size: 0.81rem;
+        }
+    }
+}

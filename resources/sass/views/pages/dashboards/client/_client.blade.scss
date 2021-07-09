@@ -1,0 +1,18 @@
+#fixed_drawer {
+    .list-group-item {
+        color: #fdfdfd;
+        background-color: #f38e0a;
+        transition: 0.1s background-color ease-in-out;
+        &:hover {
+            background-color: darken(#f38e0a, 20%);
+        }
+    }
+}
+
+.client_mobile_drawer {
+    position: absolute;
+    top: 0;
+    left: -93%;
+    width: 93%;
+    min-height: 100vh;
+}

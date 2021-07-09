@@ -1,0 +1,109 @@
+%drawer_initial_position {
+    position: fixed;
+    top: 0;
+
+    background: #212529;
+    color: white;
+    border-right: solid 1.5px rgba(50, 50, 50, 0.9);
+
+    min-height: 100vh;
+    min-width: 20%;
+
+    z-index: 9999;
+    padding: 2rem;
+
+    @media (max-width: 600px) {
+        min-width: 98%;
+    }
+}
+.drawer_initial_position_ar {
+    @extend %drawer_initial_position;
+    right: -500px;
+}
+.drawer_initial_position_fr {
+    @extend %drawer_initial_position;
+    left: -500px;
+}
+
+#drawer {
+    %close_drawer {
+        float: right;
+        color: white !important;
+    }
+    .close_drawer_ar {
+        @extend %close_drawer;
+        float: left;
+    }
+    .close_drawer_fr {
+        @extend %close_drawer;
+        float: right;
+    }
+
+    a {
+        padding: 0;
+        border: none !important;
+        text-decoration: none;
+        outline: none !important;
+        font-size: 1.1rem;
+        color: white;
+        @media (max-width: 600px) {
+            font-size: 1rem;
+        }
+    }
+
+    .btn:focus {
+        box-shadow: none;
+        outline: none !important;
+    }
+
+    a:focus {
+        outline: none !important;
+        border: none !important;
+    }
+
+    a:hover {
+        color: #71e4e4;
+        border: none !important;
+    }
+
+    .drawer_copyright {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        //background: rgb(206, 21, 21);
+        height: 10vh;
+        position: relative;
+        .drawer_copyright_text {
+            a {
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.fa-male {
+    font-size: 1.1rem;
+}
+.fa-female {
+    font-size: 1.1rem;
+}
+.fa-chevron-right {
+    font-size: 0.7rem;
+}
+.fa-chevron-left {
+    font-size: 0.7rem;
+}
+
+.btn-toggle[aria-expanded="true"] span {
+    color: #71e4e4;
+}
+.btn-toggle[aria-expanded="true"] .fa-chevron-right {
+    transform: rotate(90deg);
+    color: #71e4e4;
+}
+.btn-toggle[aria-expanded="true"] .fa-chevron-left {
+    transform: rotate(-90deg);
+    color: #71e4e4;
+}

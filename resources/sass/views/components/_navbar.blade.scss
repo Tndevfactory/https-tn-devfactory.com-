@@ -1,0 +1,257 @@
+%devenir_vendeur {
+    text-shadow: 0.51px 0.51px 0.51px rgb(245, 229, 6);
+    letter-spacing: 0.41px;
+    color: darkorange;
+    text-decoration: none;
+    transition: 0.5s color;
+    font-variant: small-caps;
+    font-weight: 500;
+    font-size: 1rem;
+    &:hover {
+        color: darken(darkorange, 5%);
+    }
+    @media (max-width: 600px) {
+        font-size: 0.95rem;
+    }
+}
+.devenir_vendeur_fr {
+    @extend %devenir_vendeur;
+    font-family: "Oswald", sans-serif;
+    float: left;
+}
+.devenir_vendeur_ar {
+    @extend %devenir_vendeur;
+    float: right;
+    font-size: 1rem;
+}
+
+%brand_name {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    letter-spacing: 0.51px;
+    text-transform: uppercase;
+    color: #1b1a1a;
+}
+.brand_name_fr {
+    @extend %brand_name;
+}
+.brand_name_ar {
+    @extend %brand_name;
+}
+
+%brand_logo {
+    left: 90px;
+    top: 14px;
+    color: #111111;
+    transform: scale(1.5) rotate(-10deg);
+}
+.brand_logo_ar {
+    @extend %brand_logo;
+    left: -23px;
+    top: 17px;
+    transform: scale(1.5) rotateY(180deg) rotate(-7deg);
+}
+.brand_logo_fr {
+    @extend %brand_logo;
+}
+%parent_search_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent_search_area_ar {
+    @extend %parent_search_area;
+}
+.parent_search_area_fr {
+    @extend %parent_search_area;
+}
+%search_area {
+    // background-color: red;
+}
+.search_area_ar {
+    @extend %search_area;
+    // margin-right: 2px;
+}
+.search_area_fr {
+    @extend %search_area;
+    margin-left: 1rem;
+}
+
+%connect_cart_ul {
+}
+.connect_cart_ul_ar {
+    @extend %connect_cart_ul;
+    margin-left: 50px;
+
+    @media (max-width: 600px) {
+        width: 100px;
+        justify-content: flex-end;
+        margin-left: 0px;
+        margin-right: 70px;
+        margin-top: 5px;
+    }
+}
+.connect_cart_ul_fr {
+    @extend %connect_cart_ul;
+    @media (max-width: 600px) {
+        width: 100px;
+        justify-content: flex-end;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+}
+
+%sign_in_btn {
+}
+
+.sign_in_btn_ar {
+    @extend %sign_in_btn;
+}
+.sign_in_btn_fr {
+    @extend %sign_in_btn;
+}
+
+%panier_btn {
+}
+.panier_btn_ar {
+    @extend %panier_btn;
+}
+.panier_btn_fr {
+    @extend %panier_btn;
+}
+
+.panier {
+    position: relative;
+    %panier_counter {
+        position: absolute;
+        top: -11px;
+        left: 12px;
+        font-size: 0.75rem;
+        font-weight: 300;
+        letter-spacing: 0.61px;
+        background-color: rgb(247, 12, 12);
+    }
+    .panier_counter_ar {
+        @extend %panier_counter;
+        top: -15px;
+        left: 5rem;
+
+        @media (max-width: 600px) {
+            left: 5px;
+            top: -13px;
+        }
+    }
+    .panier_counter_fr {
+        @extend %panier_counter;
+    }
+}
+
+.drawer_toggle_ar {
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0) !important;
+}
+.drawer_toggle_fr {
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0) !important;
+}
+
+.menu_btn_icon {
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0) !important;
+}
+
+.navbar_placement_fr {
+    padding-left: 4rem;
+}
+
+.navbar_placement_ar {
+    padding-right: 2rem;
+}
+
+.search_desktop_form {
+    margin: 0rem 0rem 0rem 2rem;
+}
+.search_input_desktop {
+    min-width: 18rem !important;
+    padding: 0rem 1rem !important;
+}
+
+.btn_search_desktop_ar {
+    // background-color: coral;
+    transform: rotate(180deg);
+
+    margin-right: -1px;
+}
+
+.btn_search_mobile_ar {
+    // background-color: coral;
+    transform: rotate(180deg);
+    margin-right: -1px;
+}
+.btn_search_icon_ar {
+    transform: rotate(180deg);
+}
+
+.menu_principal {
+    font-family: "Oswald", sans-serif;
+    transform: scale(1.15);
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    color: #4e4c4c !important;
+    &:hover {
+        color: rgb(223, 167, 14) !important;
+    }
+}
+.table_art_item {
+    transition: 1s visibility ease-in-out;
+    .table_art_div {
+        visibility: hidden;
+    }
+
+    .hover_zone {
+        height: 3rem;
+        &:hover .table_art_div {
+            visibility: visible;
+        }
+    }
+}
+.decorations_item {
+    transition: 1s visibility ease-in-out;
+    .decorations_div {
+        visibility: hidden;
+    }
+
+    .hover_zone {
+        height: 3rem;
+        &:hover .decorations_div {
+            visibility: visible;
+        }
+    }
+}
+.bijoux_item {
+    transition: 1s visibility ease-in-out;
+    .bijoux_div {
+        visibility: hidden;
+    }
+
+    .hover_zone {
+        height: 3rem;
+        &:hover .bijoux_div {
+            visibility: visible;
+        }
+    }
+}
+.habillement_item {
+    transition: 1s visibility ease-in-out;
+    .habillement_div {
+        visibility: hidden;
+    }
+
+    .hover_zone {
+        height: 3rem;
+        &:hover .habillement_div {
+            visibility: visible;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.roboto_font {
+  font-family: "Roboto", sans-serif;
+}
+
+.tajawal_font {
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  color: #333;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#fixed_drawer_admin .list-group-item {
+  color: #fdfdfd;
+  background-color: #f38e0a;
+  transition: 0.1s background-color ease-in-out;
+}
+#fixed_drawer_admin .list-group-item:hover {
+  background-color: #915506;
+}
+
+.admin_mobile_drawer {
+  position: absolute;
+  top: 0;
+  left: -93%;
+  width: 93%;
+  min-height: 100vh;
+}
+
+#fixed_drawer .list-group-item {
+  color: #fdfdfd;
+  background-color: #f38e0a;
+  transition: 0.1s background-color ease-in-out;
+}
+#fixed_drawer .list-group-item:hover {
+  background-color: #915506;
+}
+
+.client_mobile_drawer {
+  position: absolute;
+  top: 0;
+  left: -93%;
+  width: 93%;
+  min-height: 100vh;
+}

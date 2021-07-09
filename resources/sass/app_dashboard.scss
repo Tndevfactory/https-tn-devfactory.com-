@@ -1,0 +1,17 @@
+// megamenu
+@import "./initial";
+
+// dashboards admin
+@import "./views/pages/dashboards/admin/admin.blade";
+
+// dashboards client
+@import "./views/pages/dashboards/client/client.blade";
+
+// dashboards manager
+@import "./views/pages/dashboards/manager/manager.blade";
+
+// dashboards employee
+@import "./views/pages/dashboards/employee/employee.blade";
+
+// dashboards vendeur
+@import "./views/pages/dashboards/vendeur/vendeur.blade";

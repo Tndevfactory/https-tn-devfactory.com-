@@ -1,0 +1,67 @@
+#footerId {
+    font-family: "Oswald", sans-serif !important;
+    background-color: rgb(238, 239, 245);
+    color: rgb(56, 57, 70);
+
+    .brand_name_footer {
+        font-family: "Oswald", sans-serif;
+        font-weight: 600;
+        font-size: 1.75rem;
+        letter-spacing: 0.51px;
+        text-transform: uppercase;
+        color: #3a2f2f;
+    }
+    %brand_logo_footer {
+        color: #1a070c;
+        left: 90px;
+        top: 4px;
+        transform: scale(1.5) rotate(-10deg);
+    }
+    .brand_logo_footer_fr {
+        @extend %brand_logo_footer;
+    }
+    .brand_logo_footer_ar {
+        @extend %brand_logo_footer;
+        left: -50px;
+        top: 4px;
+        transform: scale(1.5) rotateY(180deg) rotate(-10deg);
+    }
+    .list-group-item {
+        border: none !important;
+    }
+    .phone {
+        color: #1a070c;
+    }
+    .email {
+        color: #1a070c;
+    }
+    .facebook_icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .instagram_icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .youtube_icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .lette_information {
+        color: #1a070c;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.6rem;
+    }
+    .footer_list {
+        .list-group {
+            .list-group-item {
+                color: #1a070c;
+            }
+        }
+    }
+    .accordion_footer {
+        color: #1a070c !important;
+    }
+}

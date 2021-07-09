@@ -1,0 +1,67 @@
+.product_title {
+    font-family: "Oswald", sans-serif;
+    color: #e62b60;
+}
+
+#tabDiv .tablinks {
+    color: #adaeb1;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+}
+#tabDiv .active {
+    background-color: #adaeb1;
+    color: #ffffff;
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 12% 100%);
+}
+#tabDiv .tabcontent {
+    display: none;
+    border: rgb(205, 205, 209) 1px solid;
+    border-radius: 5px;
+}
+#tabDiv #description {
+    //  background-color: #ddd;
+    display: block;
+}
+
+.img_big_screen,
+.img_screen {
+    cursor: pointer;
+}
+
+.img-zoom-container {
+    position: relative;
+    cursor: zoom-in;
+}
+
+.img-zoom-container:hover .img-zoom-result {
+    visibility: visible;
+}
+.img-zoom-container:hover .img-zoom-lens {
+    visibility: visible;
+}
+
+#myimage {
+    width: 400px;
+    height: 340px;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 130px;
+    height: 130px;
+    visibility: hidden;
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    visibility: hidden;
+    position: absolute;
+    /*set the size of the result div:*/
+    width: 550px;
+    height: 450px;
+
+    left: 420px;
+    top: 00px;
+}

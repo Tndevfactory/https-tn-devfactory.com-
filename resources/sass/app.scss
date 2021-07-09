@@ -1,0 +1,32 @@
+// megamenu
+@import "./initial";
+
+// welcome
+@import "./views/welcome.blade";
+
+// nav footer
+@import "./views/components/navbar.blade";
+@import "./views/components/footer.blade";
+
+// megamenu sub
+@import "./views/components/mega_menu/table_art_mm.blade";
+@import "./views/components/mega_menu/decorations_mm.blade";
+@import "./views/components/mega_menu/bijoux_mm.blade";
+@import "./views/components/mega_menu/habillement_mm.blade";
+
+// components
+@import "./views/components/lang_switcher.blade";
+@import "./views/components/drawer.blade";
+@import "./views/components/back_to_top.blade";
+@import "./views/components/process.blade";
+@import "./views/components/gsap_carousel.blade";
+
+// market
+@import "./views/pages/market/produit/produit.blade";
+@import "./views/pages/market/search/search.blade";
+@import "./views/pages/market/panier/panier.blade";
+@import "./views/pages/market/category/category.blade";
+
+// auth
+@import "./views/auth/login.blade";
+@import "./views/auth/register.blade";

@@ -1,0 +1,96 @@
+barryvdh-laravel-debugbar:
+composer require barryvdh/laravel-debugbar --dev
+php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
+
+create one sql file from migration:
+php artisan schema:dump
+
+charset table:
+  $table->charset = 'utf8mb4';
+  $table->collation = 'utf8mb4_unicode_ci';
+
+  $table->charset = 'utf8';
+  $table->collation = 'utf8_general_ci';
+
+manually set db charset:
+ALTER DATABASE hitcom888_com CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE tablename CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE columnname DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci
+
+laravel upload photo:
+
+laravel unzip zip:
+
+laravel import excel to db table:
+
+
+laravel intervene:
+
+laravel alert:
+   @if ($message = Session::get('success'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>{{ $message }}</strong>
+        </div>
+        <img src="images/{{ Session::get('image') }}">
+        @endif
+    
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <strong>Whoops!</strong> There were some problems with your input.
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+tinker factory:
+  php artisan make:factory LabFactory --model=Lab
+ User::factory()->count(50)->create();
+
+ reload class:
+ composer dump-autoload
+
+ laravel:
+ use Image
+ use File
+ use ZipArchive
+ 
+js multifilter:
+  
+ var filter = {
+  address: 'England',
+  name: 'Mark'
+};
+var users = [{
+    name: 'John',
+    email: 'johnson@mail.com',
+    age: 25,
+    address: 'USA'
+  },
+  {
+    name: 'Tom',
+    email: 'tom@mail.com',
+    age: 35,
+    address: 'England'
+  },
+  {
+    name: 'Mark',
+    email: 'mark@mail.com',
+    age: 28,
+    address: 'England'
+  }
+];
+
+
+users= users.filter(function(item) {
+  for (var key in filter) {
+    if (item[key] === undefined || item[key] != filter[key])
+      return false;
+  }
+  return true;
+});
+
+console.log(users)

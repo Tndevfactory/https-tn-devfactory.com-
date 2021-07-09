@@ -1,0 +1,40 @@
+.decorations_div {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    min-width: 80%;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+
+    .list_group,
+    .list-group-item {
+        border: none !important;
+    }
+    .list-group-item_fr {
+        &:not(:first-child) {
+            position: relative;
+            &::before {
+                content: "🆙";
+                font-size: 4px;
+                margin-right: 14px;
+                position: absolute;
+                top: 15px;
+                left: 5px;
+            }
+        }
+    }
+    .list-group-item_ar {
+        &:not(:first-child) {
+            position: relative;
+            &::after {
+                content: "🆙";
+                font-size: 4px;
+                margin-right: 14px;
+                position: absolute;
+                top: 15px;
+                right: -10px;
+            }
+        }
+    }
+}
