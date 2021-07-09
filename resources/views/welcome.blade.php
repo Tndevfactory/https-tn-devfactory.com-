@@ -43,7 +43,7 @@
                 </span>
             </div>
 
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5 g-3">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
                 @for ($i = 0; $i < 10; $i++)
                 <div class="col">
                     <div class="card box_welcome position-relative">

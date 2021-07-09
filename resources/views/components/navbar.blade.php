@@ -8,7 +8,7 @@
                 <i
                     class="fas fa-star  {{App::isLocale('ar') ? 'float-right' : 'float-left'}}"
                 ></i>
-                {{ __("become seller") }}
+                {{ __("Make it with us !") }}
             </span>
         </a>
     </div>
@@ -24,11 +24,11 @@
             <span
                 class="  {{App::isLocale('ar') ? 'brand_name_ar' : 'brand_name_fr'}}"
             >
-                {{(App::isLocale('ar') ? 'هيتكوم' : config("app.name", "Laravel"))}}
+                {{(App::isLocale('ar') ? 'تين-فكتوري' : config("app.name", "Laravel"))}}
             </span>
             <span>
                 <i
-                    class=" {{App::isLocale('ar') ? 'brand_logo_ar' : 'brand_logo_fr'}} fas fa-compress-alt position-absolute"
+                    class=" {{App::isLocale('ar') ? 'brand_logo_ar' : 'brand_logo_fr'}} fas fa-network-wired position-absolute"
                 ></i
             ></span>
         </a>
@@ -75,6 +75,19 @@
                     ></span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a
+                    class=" {{App::isLocale('ar') ? 'sign_in_btn_ar' : 'sign_in_btn_fr'}} btn btn-outline-primary btn-sm"
+                    href="{{ route('login', App::getLocale() ) }}"
+                >
+                    <span class="d-none d-md-inline-flex small"
+                        >{{ __("Sign up") }}
+                    </span>
+                    <span>
+                        <i class="fas fa-user-plus d-md-inline-flex small"></i
+                    ></span>
+                </a>
+            </li>
 
             @else
             <li class="nav-item dropdown">
@@ -113,26 +126,6 @@
                 </div>
             </li>
             @endguest
-
-            {{--Panier--}}
-            <li class="panier nav-item">
-                <a
-                    class="  {{App::isLocale('ar') ? 'panier_btn_ar' : 'panier_btn_fr'}} btn btn-primary btn-sm"
-                    href="{{ route('panier', App::getLocale()) }}"
-                >
-                    <span
-                        ><i class="fas fa-cart-plus d-md-inline-flex small"></i
-                    ></span>
-                    <span class="d-none d-md-inline-flex small"
-                        >1300.678 TND</span
-                    >
-                </a>
-
-                <span
-                    class="  {{App::isLocale('ar') ? 'panier_counter_ar' : 'panier_counter_fr'}} badge rounded-pill"
-                    >33</span
-                >
-            </li>
         </ul>
         @include('components.lang_switcher')
     </div>
@@ -174,7 +167,7 @@
                             class="nav-link menu_principal text-capitalize"
                             href="#"
                         >
-                            {{ __("TABLE ARTS") }}
+                            {{ __("Agency") }}
                         </a>
                         @include('components.mega_menu.table_art_mm')
                     </div>
@@ -186,7 +179,7 @@
                             class="menu_principal nav-link text-capitalize"
                             href="#"
                         >
-                            {{ __("DECORATIONS") }}
+                            {{ __("Entrepreneur") }}
                         </a>
                         @include('components.mega_menu.decorations_mm')
                     </div>
@@ -197,7 +190,7 @@
                             class="menu_principal nav-link text-capitalize"
                             href="#"
                         >
-                            {{ __("JEWELRY") }}
+                            {{ __("Education") }}
                         </a>
                         @include('components.mega_menu.bijoux_mm')
                     </div>
@@ -208,7 +201,7 @@
                             class="menu_principal nav-link text-capitalize"
                             href="#"
                         >
-                            {{ __("CLOTHING") }}
+                            {{ __("Government") }}
                         </a>
                         @include('components.mega_menu.habillement_mm')
                     </div>

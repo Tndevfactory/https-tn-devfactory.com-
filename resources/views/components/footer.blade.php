@@ -80,7 +80,12 @@
                     </span>
                 </div>
                 <div
-                    class="d-flex justify-content-start align-items-center mt-5"
+                    class="
+                        d-flex
+                        justify-content-start
+                        align-items-center
+                        mt-md-5
+                    "
                 >
                     <span
                         class="mt-3  {{App::isLocale('ar') ? 'mx-3' : 'mx-3'}}"

@@ -62,5 +62,41 @@
                 >
             </a>
         </li>
+        <li>
+            <a
+                class="dropdown-item"
+                href="{{ route(Route::currentRouteName() , 'fr') }}"
+            >
+                <div class="lang_box lang_box_fr"></div>
+                <span
+                    class="d-none d-md-block small  {{App::isLocale('ar') ? 'me-2' : ''}}"
+                    >Deutch</span
+                >
+            </a>
+        </li>
+        <li>
+            <a
+                class="dropdown-item"
+                href="{{ route(Route::currentRouteName() , 'fr') }}"
+            >
+                <div class="lang_box lang_box_fr"></div>
+                <span
+                    class="d-none d-md-block small  {{App::isLocale('ar') ? 'me-2' : ''}}"
+                    >Espagnol</span
+                >
+            </a>
+        </li>
+        <li>
+            <a
+                class="dropdown-item"
+                href="{{ route(Route::currentRouteName() , 'fr') }}"
+            >
+                <div class="lang_box lang_box_fr"></div>
+                <span
+                    class="d-none d-md-block small  {{App::isLocale('ar') ? 'me-2' : ''}}"
+                    >Chinese</span
+                >
+            </a>
+        </li>
     </ul>
 </div>
